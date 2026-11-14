@@ -1,20 +1,14 @@
-# PhishGuard Architecture
+﻿# System Architecture
 
-## Application Flow
+## Data Flow
+1. User submits a URL via the **React** frontend.
+2. **Axios** sends a POST /api/scan JSON request to the **Flask** backend.
+3. The **URL Analyzer** (ackend/detector/url_analyzer.py) parses the URL string and runs heuristic rules.
+4. Results are stored in **SQLite** (ackend/database.py) and returned as JSON.
 
-1. User submits a URL through React.
-2. React sends a POST request to Flask.
-3. Flask validates the submitted URL.
-4. URL analyzer checks suspicious characteristics.
-5. Risk scoring calculates a score.
-6. SQLite stores the scan information.
-7. Flask returns JSON response.
-8. React displays the scan results.
-
-## Architecture Components
-
-Frontend: React.js
-Backend: Flask
-Database: SQLite
-Communication: REST API
-Detection: Rule-based URL analysis
+## Core Endpoints
+- GET / – Health check
+- POST /api/scan – Analyze a URL
+- GET /api/history – List past scans
+- GET /api/stats – Dashboard summary statistics
+- GET /api/scan/<id> – Single scan report
