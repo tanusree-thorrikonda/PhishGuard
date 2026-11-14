@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #111c30;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.home {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.home h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  color: #b5c0d0;
+  margin-bottom: 25px;
+}
+
+.scanner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 35px auto;
+  max-width: 600px;
+}
+
+.scanner input {
+  padding: 15px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #394963;
+}
+
+.scanner button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 13px;
+}
