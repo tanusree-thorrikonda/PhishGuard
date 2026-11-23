@@ -1,16 +1,10 @@
-# Python
+﻿node_modules/
+frontend/node_modules/
+backend/venv/
+venv/
 __pycache__/
 *.pyc
-venv/
-.env
-
-# React
-node_modules/
-dist/
-
-# Database
 *.db
-*.sqlite3
-
-# IDE
-.vscode/
+.env
+dist/
+frontend/dist/
