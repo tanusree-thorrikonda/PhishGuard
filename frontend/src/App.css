@@ -1,0 +1,15 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background: #0b1220;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+}
