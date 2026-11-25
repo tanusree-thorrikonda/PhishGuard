@@ -9,11 +9,11 @@ export default function Navbar() {
           <ShieldAlert className="w-6 h-6" />
           <span>PhishGuard</span>
         </Link>
-
         <div className="flex gap-6 text-sm font-medium text-slate-300">
           <Link to="/" className="hover:text-white transition">URL Scanner</Link>
           <Link to="/history" className="hover:text-white transition">Scan History</Link>
           <Link to="/dashboard" className="hover:text-white transition">Dashboard</Link>
+          <Link to="/about" className="hover:text-white transition">Methodology</Link>
         </div>
       </div>
     </nav>
