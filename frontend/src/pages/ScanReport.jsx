@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Globe, Lock, Calendar, Hash } from "lucide-react";
 import { getScanById } from "../services/api";

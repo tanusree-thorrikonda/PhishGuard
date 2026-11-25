@@ -1,4 +1,5 @@
-﻿import { Link } from "react-router-dom";
+﻿import React from "react";
+import { Link } from "react-router-dom";
 import { AlertTriangle, CheckCircle, ShieldX, ArrowRight } from "lucide-react";
 
 export default function ScanResultCard({ result }) {
@@ -75,6 +76,17 @@ export default function ScanResultCard({ result }) {
             ))}
           </div>
         )}
+      </div>
+
+      <div className="mt-6 pt-4 border-t border-slate-800">
+        <h3 className="text-sm font-semibold text-slate-300 uppercase tracking-wider">Recommended Action</h3>
+        <p className="text-sm text-slate-400 mt-2">
+          {result.status === "High Risk"
+            ? "Avoid this link and do not enter credentials or personal information."
+            : result.status === "Suspicious"
+            ? "Verify the sender and destination independently before continuing."
+            : "No suspicious heuristic indicators were detected, but still verify unfamiliar links before use."}
+        </p>
       </div>
 
       <div className="mt-6 pt-4 border-t border-slate-800 flex justify-between items-center">

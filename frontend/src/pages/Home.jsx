@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import React, { useState } from "react";
 import { Search, Shield } from "lucide-react";
 import { scanUrl } from "../services/api";
 import ScanResultCard from "../components/ScanResultCard";

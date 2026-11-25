@@ -3,6 +3,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ScanReport from "./pages/ScanReport";
+import History from "./pages/History";
+import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -13,8 +17,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/scan/:id" element={<ScanReport />} />
-            <Route path="/history" element={<div className="text-slate-400">Scan History (Day 15)</div>} />
-            <Route path="/dashboard" element={<div className="text-slate-400">Analytics Dashboard (Days 16–17)</div>} />
+            <Route path="/history" element={<History />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
